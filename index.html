@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="">
+
+        <div>
+            <label for="">Telefone</label>
+            <input type="text" id="telefone" >
+        </div>
+        <div>
+            <label for="">Telefone</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea>
+        </div>
+        
+        <button type="button" id="gerarlink">Gerar</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+
+    <script>
+        
+        $("#gerarlink").click(function(){
+            
+
+
+            // let urlAtual = window.location.href;
+    
+            var telefone =4244 //document.getElementById('telefone')
+            var msg = "sara dasdasdasd dasdasdada " //document.getElementById('mensagem');
+             
+            var msgLimpa = msg.split(' ').join('+')
+            
+
+            console.log(msgLimpa)
+            
+            // let link = "https://api.whatsapp.com/send?phone="+telefone+"&amp;text="+msg   ;
+
+            let link = "https://api.whatsapp.com/send?phone=" + telefone + "&text="+msgLimpa +"https://www."+"";
+
+            console.log(link)
+    
+            
+            
+                
+        })
+
+        
+    
+    </script>
+</body>
+</html>
